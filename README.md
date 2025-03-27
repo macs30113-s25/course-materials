@@ -9,7 +9,7 @@
 | Jon Clindaniel               | Yunrui Bao           | Pritam Gajbhiye        | Location: 1155 E. 60th Street, Rm. 295   |
 | 1155 E. 60th Street, Rm. 215 |                      |                        | Monday/Wednesday Lecture, Friday Lab      |
 | jclindaniel@uchicago.edu     | bao0211@uchicago.edu | pgajbhiye@uchicago.edu | 3:00-4:20 PM (CT) |
-| **Office Hours:** Drop-In (No appointment needed): Tuesday 2:00-4:00pm <br/><br/> [Schedule an Appointment][jon_oh] Thursday 2:00-4:00pm | **Office Hours:** TBD | **Office Hours:** TBD | [Canvas Course Site][canvas_url] |
+| **Office Hours:** Drop-In (No appointment needed): Tuesday 2:00-4:00pm <br/><br/> [Schedule an Appointment][jon_oh] Thursday 2:00-4:00pm | **Office Hours:** Tuesday 4:00 - 6:00 PM, 1155 E. 60th St., Room 222 | **Office Hours:** Monday 12:00 - 2:00 PM, 1155 E. 60th St., Room 222 | [Canvas Course Site][canvas_url] |
 
 ## Course Description
 Computational social scientists increasingly need to grapple with data that is too big and code that is too resource intensive to run on a local machine. Using Python, students in this course will learn how to effectively scale their computational methods beyond their local machines -- optimizing and parallelizing their code across clusters of CPUs and GPUs, both on-premises and in the cloud. The focus of the course will be on social scientific applications, such as: accelerating social simulations by several orders of magnitude, processing large amounts of social media data in real-time, and training machine learning models on economic datasets that are too large for an average laptop to handle.
