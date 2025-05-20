@@ -3,8 +3,9 @@
     {
       "text": "%spark.conf\nspark.pyspark.python python3\nspark.pyspark.virtualenv.enabled true\nspark.pyspark.virtualenv.type native\nspark.pyspark.virtualenv.bin.path /usr/bin/virtualenv",
       "user": "anonymous",
-      "dateUpdated": "2023-05-16T01:15:37+0000",
+      "dateUpdated": "2025-05-20T20:44:44+0000",
       "config": {
+        "tableHide": false,
         "editorSetting": {
           "language": "text",
           "editOnDblClick": false,
@@ -14,10 +15,9 @@
         "colWidth": 12,
         "editorMode": "ace/mode/text",
         "fontSize": 9,
-        "results": {},
-        "enabled": true,
         "editorHide": false,
-        "tableHide": false
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -30,20 +30,21 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1684199329423_1689402430",
+      "jobName": "paragraph_1747773871323_-1631631470",
       "id": "paragraph_1683907136751_-1224732589",
-      "dateCreated": "2023-05-16T01:08:49+0000",
-      "dateStarted": "2023-05-16T01:09:05+0000",
-      "dateFinished": "2023-05-16T01:09:05+0000",
+      "dateCreated": "2025-05-20T20:44:31+0000",
       "status": "FINISHED",
       "focus": true,
-      "$$hashKey": "object:3753"
+      "$$hashKey": "object:148",
+      "dateFinished": "2025-05-20T20:44:44+0000",
+      "dateStarted": "2025-05-20T20:44:44+0000"
     },
     {
-      "text": "%spark.pyspark\n\ndf = spark.read.parquet('s3://nyc-tlc/trip data/yellow_tripdata_2019*.parquet')\n\ndf.createOrReplaceTempView(\"taxi\")",
+      "text": "%spark.pyspark\n\ndf = spark.read.parquet('s3://css-uchicago/nyc-tlc/trip_data/yellow_tripdata_2019*.parquet')\n\ndf.createOrReplaceTempView(\"taxi\")",
       "user": "anonymous",
-      "dateUpdated": "2023-05-16T01:15:37+0000",
+      "dateUpdated": "2025-05-20T20:46:19+0000",
       "config": {
+        "tableHide": false,
         "editorSetting": {
           "language": "python",
           "editOnDblClick": false,
@@ -127,8 +128,7 @@
             "helium": {}
           }
         },
-        "enabled": true,
-        "tableHide": false
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -147,27 +147,28 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://ip-172-31-34-49.ec2.internal:4040/jobs/job?id=0",
-              "$$hashKey": "object:4622"
+              "jobUrl": "http://ip-172-31-29-159.ec2.internal:4040/jobs/job?id=0",
+              "$$hashKey": "object:1030"
             }
           ],
           "interpreterSettingId": "spark"
         }
       },
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1684199329424_899690156",
+      "jobName": "paragraph_1747773871324_-368306360",
       "id": "paragraph_1683910000870_-561502384",
-      "dateCreated": "2023-05-16T01:08:49+0000",
-      "dateStarted": "2023-05-16T01:09:11+0000",
-      "dateFinished": "2023-05-16T01:09:49+0000",
+      "dateCreated": "2025-05-20T20:44:31+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:3754"
+      "$$hashKey": "object:149",
+      "dateFinished": "2025-05-20T20:46:30+0000",
+      "dateStarted": "2025-05-20T20:46:19+0000"
     },
     {
       "text": "%spark.sql\nSELECT passenger_count, AVG(trip_distance) as avg_distance\nFROM taxi\nWHERE passenger_count > 3\nGROUP BY passenger_count\nORDER BY passenger_count",
       "user": "anonymous",
-      "dateUpdated": "2023-05-16T01:15:37+0000",
+      "dateUpdated": "2025-05-20T20:49:08+0000",
       "config": {
+        "tableHide": false,
         "editorSetting": {
           "language": "sql",
           "editOnDblClick": false,
@@ -177,7 +178,7 @@
         "colWidth": 6,
         "editorMode": "ace/mode/sql",
         "fontSize": 9,
-        "editorHide": false,
+        "editorHide": true,
         "title": false,
         "results": {
           "0": {
@@ -287,8 +288,7 @@
             "helium": {}
           }
         },
-        "enabled": true,
-        "tableHide": false
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -299,7 +299,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "passenger_count\tavg_distance\n4.0\t3.1565478227049333\n5.0\t3.025776405356713\n6.0\t3.023784768827353\n7.0\t3.2531250000000003\n8.0\t5.36389891696751\n9.0\t5.2392\n"
+            "data": "passenger_count\tavg_distance\n4.0\t3.156547822704933\n5.0\t3.025776405356713\n6.0\t3.0237847688273525\n7.0\t3.2531250000000003\n8.0\t5.363898916967509\n9.0\t5.2392\n"
           }
         ]
       },
@@ -312,31 +312,32 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://ip-172-31-34-49.ec2.internal:4040/jobs/job?id=1",
-              "$$hashKey": "object:4627"
+              "jobUrl": "http://ip-172-31-29-159.ec2.internal:4040/jobs/job?id=1",
+              "$$hashKey": "object:2527"
             },
             {
-              "jobUrl": "http://ip-172-31-34-49.ec2.internal:4040/jobs/job?id=2",
-              "$$hashKey": "object:4628"
+              "jobUrl": "http://ip-172-31-29-159.ec2.internal:4040/jobs/job?id=2",
+              "$$hashKey": "object:2528"
             }
           ],
           "interpreterSettingId": "spark"
         }
       },
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1684199329424_-2071928036",
+      "jobName": "paragraph_1747773871324_-446277584",
       "id": "paragraph_1683911226884_1156288147",
-      "dateCreated": "2023-05-16T01:08:49+0000",
-      "dateStarted": "2023-05-16T01:11:27+0000",
-      "dateFinished": "2023-05-16T01:11:43+0000",
+      "dateCreated": "2025-05-20T20:44:31+0000",
       "status": "FINISHED",
-      "$$hashKey": "object:3755"
+      "$$hashKey": "object:150",
+      "dateFinished": "2025-05-20T20:46:48+0000",
+      "dateStarted": "2025-05-20T20:46:35+0000"
     },
     {
       "text": "%spark.pyspark\n\nimport pyspark.sql.functions as F\n\ndf2 = df.filter(F.col('passenger_count') > 3) \\\n        .groupBy('passenger_count') \\\n        .agg(F.avg(F.col('trip_distance')) \\\n              .alias('avg_distance')) \\\n        .orderBy(F.col('passenger_count'))\n\nz.show(df2) # use Zeppelin context's 'show' method",
       "user": "anonymous",
-      "dateUpdated": "2023-05-16T01:15:37+0000",
+      "dateUpdated": "2025-05-20T20:47:19+0000",
       "config": {
+        "tableHide": false,
         "editorSetting": {
           "language": "python",
           "editOnDblClick": false,
@@ -455,8 +456,7 @@
             "helium": {}
           }
         },
-        "enabled": true,
-        "tableHide": false
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -467,24 +467,45 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "passenger_count\tavg_distance\n4.0\t3.1565478227049333\n5.0\t3.025776405356713\n6.0\t3.0237847688273525\n7.0\t3.2531250000000003\n8.0\t5.363898916967509\n9.0\t5.2392\n"
+            "data": "passenger_count\tavg_distance\n4.0\t3.1565478227049333\n5.0\t3.0257764053567135\n6.0\t3.023784768827353\n7.0\t3.2531250000000003\n8.0\t5.363898916967509\n9.0\t5.2392\n"
           }
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ip-172-31-29-159.ec2.internal:4040/jobs/job?id=3",
+              "$$hashKey": "object:2021"
+            },
+            {
+              "jobUrl": "http://ip-172-31-29-159.ec2.internal:4040/jobs/job?id=4",
+              "$$hashKey": "object:2022"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1684199329425_-683973858",
+      "jobName": "paragraph_1747773871324_-1484135150",
       "id": "paragraph_1683911692915_626659806",
-      "dateCreated": "2023-05-16T01:08:49+0000",
-      "status": "READY",
-      "$$hashKey": "object:3756"
+      "dateCreated": "2025-05-20T20:44:31+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:151",
+      "dateFinished": "2025-05-20T20:47:21+0000",
+      "dateStarted": "2025-05-20T20:47:19+0000"
     },
     {
       "text": "%spark.sql\n\nSELECT tip_amount, trip_distance\nFROM taxi",
       "user": "anonymous",
-      "dateUpdated": "2023-05-16T01:15:37+0000",
+      "dateUpdated": "2025-05-20T20:47:32+0000",
       "config": {
+        "tableHide": false,
         "editorSetting": {
           "language": "sql",
           "editOnDblClick": false,
@@ -526,8 +547,7 @@
             "helium": {}
           }
         },
-        "enabled": true,
-        "tableHide": false
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -547,17 +567,33 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ip-172-31-29-159.ec2.internal:4040/jobs/job?id=5",
+              "$$hashKey": "object:2119"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1684199329425_339756492",
+      "jobName": "paragraph_1747773871325_-1756387634",
       "id": "paragraph_1683910282358_-1088575383",
-      "dateCreated": "2023-05-16T01:08:49+0000",
-      "status": "READY",
-      "$$hashKey": "object:3757"
+      "dateCreated": "2025-05-20T20:44:31+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:152",
+      "dateFinished": "2025-05-20T20:47:33+0000",
+      "dateStarted": "2025-05-20T20:47:32+0000"
     }
   ],
   "name": "zeppelin_demo",
-  "id": "2J2E4U29K",
+  "id": "2KUZUTHR1",
   "defaultInterpreterGroup": "spark",
   "version": "0.9.0-preview1",
   "noteParams": {},
